@@ -1,0 +1,241 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ h1{
+    font-size: 5vh;
+ }
+body{
+    text-align: center;
+    background-color: aliceblue;
+
+}
+h2{
+    
+    color: purple;
+}
+h1{
+    color: rgb(0, 0, 0);
+}
+p{
+    color: rgb(0, 0, 0);
+}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(0, 56, 0);
+    text-decoration: underline;
+}
+ul{
+    color: rgb(0, 0, 0);
+}
+.pesn {
+    width: 70%; /* Ширина блока 70% экрана */
+    margin: 40px auto; /* Центрирование блока и добавление отступа сверху/снизу */
+    display: flex;
+    flex-direction: column; /* Элементы располагаются вертикально */
+    align-items: center; /* Центрирование текста по горизонтали */
+    justify-content: space-evenly; /* Центрирование содержимого по вертикали */
+    padding: 20px; /* Внутренние отступы */
+    background-color: #fef7fb; /* Светлый розовый фон для романтики */
+    border-radius: 15px; /* Округлённые углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Лёгкая тень для объёмного эффекта */
+    font-family: 'Georgia', serif; /* Элегантный шрифт для текста */
+    color: #4d4d4d; /* Нейтральный тёмно-серый цвет текста */
+}
+
+.pesn p {
+    font-size: 18px; /* Комфортный размер текста */
+    line-height: 1.8; /* Межстрочный интервал для лучшей читабельности */
+    text-align: center; /* Текст выровнен по центру */
+    margin: 0 0 20px 0; /* Отступы между абзацами */
+    white-space: pre-line; /* Сохранение форматирования строк в HTML */
+}
+
+.pesn p::first-letter {
+    font-size: 1.8em; /* Увеличенная первая буква */
+    font-weight: bold; /* Жирный стиль для первой буквы */
+    color: #e57373; /* Розовый акцент на первой букве */
+}
+
+.pesn::before {
+    
+    font-size: 2em; /* Увеличенный размер сердца */
+    color: #e57373; /* Цвет сердца */
+    display: block;
+    text-align: center;
+    margin-bottom: 10px; /* Отступ от символа до текста */
+}
+
+.pesn::after {
+    
+    font-size: 2em;
+    color: #e57373;
+    display: block;
+    text-align: center;
+    margin-top: 10px; /* Отступ от текста до символа */
+}
+
+
+.slider {
+position: relative;
+width: 100%;
+max-width: 600px;
+margin: auto;
+overflow: hidden;
+}
+
+.slides {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+min-width: 100%;
+box-sizing: border-box;
+}
+
+.slide img {
+width: 100%;
+display: block;
+}
+
+.prev, .next {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: rgba(0,0,0,0.5);
+color: white;
+border: none;
+padding: 10px;
+cursor: pointer;
+}
+
+.prev {
+left: 0;
+}
+
+.next {
+right: 0;
+}
+
+.links{
+    
+    display: flex;
+    justify-content: space-evenly ;
+}
+button{
+    font-size: 3vh;
+    background-color: rgba(255, 0, 100, 0.7);
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+.love-gallery {
+width: 80vw;
+max-width: 1200px;
+padding: 20px;
+background-color: #ffe4e1;
+border-radius: 10px;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+margin-left: auto;
+margin-right: auto;
+}
+.gallery-container {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+justify-content: center;
+}
+.gallery-item {
+width: calc(33.333% - 10px);
+overflow: hidden;
+border-radius: 10px;
+position: relative;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+transform: scale(1.05);
+}
+
+.gallery-item:before {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 1.5rem;
+color: rgba(255, 0, 100, 0.7);
+}
+
+@media (max-width: 768px) {
+.gallery-item {
+width: calc(50% - 10px);
+}
+}
+
+@media (max-width: 480px) {
+.gallery-item {
+width: 100%;
+}
+}
+
+.love-videos {
+width: 90%;
+max-width: 1200px;
+padding: 20px;
+background-color: #ffe4e1;
+border-radius: 10px;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+margin: 40px auto; /* Дополнительный отступ сверху и снизу для разделения блоков */
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.video-container {
+display: flex;
+gap: 15px;
+justify-content: center;
+}
+
+.video-item {
+width: calc(50% - 10px); /* Видео занимает 50% ширины контейнера */
+overflow: hidden;
+border-radius: 10px;
+position: relative;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-item video {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.3s ease-in-out;
+}
+
+.video-item:hover video {
+transform: scale(1.05);
+}
+
+.video-item:before {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 1.5rem;
+color: rgba(255, 0, 100, 0.7);
+}
+
+@media (max-width: 768px) {
+.video-item {
+width: 100%; /* На мобильных устройствах видео занимают всю ширину */
+}
+}
